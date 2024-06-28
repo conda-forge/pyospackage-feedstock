@@ -1,5 +1,5 @@
 {% set name = "pyospackage" %}
-{% set version = "0.1.10" %}
+{% set version = "0.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyospackage-{{ version }}.tar.gz
-  sha256: b16fa74b9d3659609bde00fd6f1f7973ea15a47e41fdbd911f0666250feb95d9
+  sha256: 7b463f7b385613d4e63ce2efb47fd380f2f2fb8c3efb23d503beece5e507a946
 
 build:
   noarch: python
