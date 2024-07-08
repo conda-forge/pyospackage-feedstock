@@ -1,5 +1,5 @@
 {% set name = "pyospackage" %}
-{% set version = "0.1.11" %}
+{% set version = "0.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyospackage-{{ version }}.tar.gz
-  sha256: 5ae7a8b193415cc7c487863c958d5a19ec5d369e1324321824a210741fdfd4dc
+  sha256: 7b463f7b385613d4e63ce2efb47fd380f2f2fb8c3efb23d503beece5e507a946
 
 build:
   noarch: python
@@ -16,11 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.10
     - hatchling
+    - hatch-vcs
     - pip
   run:
-    - python >=3.9
+    - python >=3.10
 
 test:
   imports:
@@ -33,6 +34,7 @@ test:
 about:
   home: https://pypi.org/project/pyospackage/
   summary: A package that adds numbers together
+  doc_url: https://pyospackage.readthedocs.io/en/latest/
   dev_url: https://github.com/pyopensci/pyospackage
   license: MIT
   license_file: LICENSE
