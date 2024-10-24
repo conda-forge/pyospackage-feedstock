@@ -11,6 +11,8 @@ Summary: A package that adds numbers together
 
 Development: https://github.com/pyopensci/pyospackage
 
+Documentation: https://pyospackage.readthedocs.io/en/latest/
+
 Current build status
 ====================
 
