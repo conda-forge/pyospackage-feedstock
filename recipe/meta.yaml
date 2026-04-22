@@ -1,6 +1,6 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.10" %}
 {% set name = "pyospackage" %}
-{% set version = "0.2" %}
+{% set version = "0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyospackage-{{ version }}.tar.gz
-  sha256: dd46b78c1ccd8a5affcf8b6e64000e9cd101c40be6562d48a39aa3f10d83d684
+  sha256: 8513945dd392dc3eb81a78d8d0b5a6dd041df5ea856957ec6a82935bd64f14c9
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
